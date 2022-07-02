@@ -6,12 +6,11 @@ table{border-collapse:collapse;font-family:Consolas,monaco,monospace}
 th{font-weight:700}
 .file-name{text-align:left}
 .file-type{text-align:center}
-.file-size{padding-left:4em}
+.file-size{text-align:right}
 .file-date-created,
-.file-date-modified{padding-left:2em}
+.file-date-modified{text-align:right}
 .file-date-created,
 .file-date-modified,
-.file-size{text-align:end;white-space:nowrap}
 .icon{padding-left:1.5em;text-decoration:none}
 .icon:hover{text-decoration:underline}
 .icon-file{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAABHUlEQVR42o2RMW7DIBiF3498iHRJD5JKHurL+CRVBp+i2T16tTynF2gO0KSb5ZrBBl4HHDBuK/WXACH4eO9/CAAAbdvijzLGNE1TVZXfZuHg6XCAQESAZXbOKaXO57eiKG6ft9PrKQIkCQqFoIiQFBGlFIB5nvM8t9aOX2Nd18oDzjnPgCDpn/BH4zh2XZdlWVmWiUK4IgCBoFMUz9eP6zRN75cLgEQhcmTQIbl72O0f9865qLAAsURAAgKBJKEtgLXWvyjLuFsThCSstb8rBCaAQhDYWgIZ7myM+TUBjDHrHlZcbMYYk34cN0YSLcgS+wL0fe9TXDMbY33fR2AYBvyQ8L0Gk8MwREBrTfKe4TpTzwhArXWi8HI84h/1DfwI5mhxJamFAAAAAElFTkSuQmCC) left top no-repeat}
@@ -65,7 +64,7 @@ function list(path){
 		content += `
 <tr>
 	<td class="file-name">
-		<a class="icon icon-up folder" href="${up}">..</a>
+		<a class="icon icon-up folder" href="${up}">...</a>
 	</td>
 	<td class="file-size"></td>
 	<td class="file-date-modified"></td>
